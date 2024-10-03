@@ -1,0 +1,71 @@
+table {
+    margin-bottom: 20px; 
+}
+#jeden, #jeden th, #jeden td, #jeden tr{
+    border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    border-collapse: collapse;
+}
+#jeden th{
+    color: white;
+    background-color: green;
+}
+#lewo{
+    text-align: left;
+    vertical-align: top;
+}
+#srodek{
+    text-align: center;
+}
+#prawo{
+    text-align: right;
+    vertical-align: bottom;
+}
+#dwa th, #dwa tr, #dwa td{
+    border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+} 
+#dwa th{
+    color: white;
+    background-color: green;
+}
+#trzy, #trzy th, #trzy td, #trzy tr{
+    border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    border-collapse: collapse;
+    width: 800px;
+}
+#trzy th{
+    color: blue;
+    background-color: orange;
+}
+#cztery{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-family: sans-serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+#cztery th{
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+#cztery th, #cztery td{
+    padding: 12px 15px;
+}
+#tlo {
+    font-weight: bold;
+    color: #009879;
+}
+#cztery tr:nth-of-type(odd) {
+    background-color: #f3f3f3;
+}
+#cztery tr {
+    border-bottom: 1px solid #dddddd;
+}
+#cztery tr:last-of-type{
+    border-bottom: 2px solid #009879;
+}

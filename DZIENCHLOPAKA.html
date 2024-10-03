@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dzień Chłopaka</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #ff5e5e;
+            font-size: 3rem;
+            margin-top: 50px;
+        }
+
+        p {
+            font-size: 1.5rem;
+            color: #333;
+            margin: 20px auto;
+            width: 80%;
+        }
+
+        .hearts {
+            position: relative;
+            margin: 50px auto;
+            width: 300px;
+            height: 300px;
+        }
+
+        .heart {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: #ff5e5e;
+            transform: rotate(45deg);
+            animation: move 4s infinite ease-in-out;
+        }
+
+        .heart::before,
+        .heart::after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: #ff5e5e;
+            border-radius: 50%;
+        }
+
+        .heart::before {
+            top: -25px;
+            left: 0;
+        }
+
+        .heart::after {
+            left: -25px;
+            top: 0;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translateY(0) rotate(45deg);
+            }
+            50% {
+                transform: translateY(-100px) rotate(45deg);
+            }
+            100% {
+                transform: translateY(0) rotate(45deg);
+            }
+        }
+
+        .heart:nth-child(2) {
+            left: 100px;
+            animation-duration: 3.5s;
+        }
+
+        .heart:nth-child(3) {
+            left: 200px;
+            animation-duration: 4.5s;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 1rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <h1>Wszystkiego najlepszego z okazji Dnia Chłopaka!</h1>
+    <p>Niech każdy dzień będzie dla Ciebie pełen uśmiechu, radości i nowych, wspaniałych wyzwań. Spełniaj swoje marzenia, nie zapominaj o sile, którą w sobie nosisz, i zawsze pamiętaj, że jesteś wyjątkowy! 🦸‍♂️</p>
+
+    <div class="hearts">
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+    </div>
+
+    <footer>Autor: Twój cichy wielbiciel ❤️</footer>
+</body>
+</html>
